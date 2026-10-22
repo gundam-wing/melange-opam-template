@@ -7,6 +7,9 @@ on:
     # Prime the caches every Monday
     - cron: 0 1 * * MON
 
+permissions:
+  contents: read
+
 jobs:
   build-sample-project:
     name: Build sample project
